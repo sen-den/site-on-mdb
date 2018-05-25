@@ -27,15 +27,6 @@ video{ width:100%; height:auto; }
   font-family:Khula;
   font-size:2em;
   text-align:left;
-  /*height:100%;
-  width:100%;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;*/
   margin:auto;
 }
 .console-underscore {
@@ -43,6 +34,22 @@ video{ width:100%; height:auto; }
   position:relative;
   top:-0.14em;
   left:10px;
+}
+
+.method-2 {
+  display: inline-block;
+  font-size: 4em;
+  background: url('https://s3.amazonaws.com/f.cl.ly/items/0A2z3P0k3C45013S0z1J/clip-bg.jpg') no-repeat;
+  -webkit-background-clip: text;
+  color: rgba(255, 255, 255, 0);
+  text-shadow: 0 0 rgba(0, 0, 0, .1);
+  background-size: 0 100%;
+  animation: fill-2 2s infinite;
+}
+
+@keyframes fill-2 {
+  50%   { background-size: 100% 100%; }
+  100%  { background-size: 0 100%;    }
 }
 </style>
 
@@ -260,7 +267,7 @@ video{ width:100%; height:auto; }
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">Lorem ipsum</h3>
+            <h3 class="h3 mb-3 method-2">Документы онлайн</h3>
             <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
             <!-- CTA -->
             <a target="_blank" href="#" class="btn btn-grey btn-md">Начать
